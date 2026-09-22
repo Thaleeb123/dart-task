@@ -46,6 +46,8 @@ void main() {
     print("course: ${student["course"]}");
     print("marks : ${student["marks"]}");
     print("average mark : ${average.toStringAsFixed(2)}");
+
+    
   }
   // task 2
 
@@ -71,7 +73,7 @@ void main() {
 
 
 
-  
+
   // task3
   // Map<String, dynamic>? topper;
   // double highestaverage = 0.0;
