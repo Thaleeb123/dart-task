@@ -40,13 +40,11 @@ void main() {
 
     double average = total / marks.length;
 
-    // details of students
     print("ID: ${student['id']}");
     print("name: ${student["name"]}");
     print("course: ${student["course"]}");
     print("marks : ${student["marks"]}");
     print("average mark : ${average.toStringAsFixed(2)}");
-
   // task3
   Map<String, dynamic>? topper;
   double highestaverage = 0.0;
