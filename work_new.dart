@@ -47,51 +47,24 @@ void main() {
     print("marks : ${student["marks"]}");
     print("average mark : ${average.toStringAsFixed(2)}");
 
-    
-  }
-  // task 2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // task3
-  // Map<String, dynamic>? topper;
-  // double highestaverage = 0.0;
-  // for (var student in students) {
-  //   List<int> marks = student["marks"];
-  //   int total = 0;
-  //   for (int mark in marks) {
-  //     total += mark;
-  //   }
-  //   double average = total / marks.length;
-  //   if (average > highestaverage) {
-  //     highestaverage = average;
-  //     topper = student;
-  //   }
-  // }
-  // if (topper != null) {
-  //   print('Student Name: ${topper['name']}');
-  //   print('Course: ${topper['course']}');
-  //   print('Average mark: ${highestAverage.toStringAsFixed(2)}');
-  // }
+  Map<String, dynamic>? topper;
+  double highestaverage = 0.0;
+  for (var student in students) {
+    List<int> marks = student["marks"];
+    int total = 0;
+    for (int mark in marks) {
+      total += mark;
+    }
+    double average = total / marks.length;
+    if (average > highestaverage) {
+      highestaverage = average;
+      topper = student;
+    }
+  }
+  if (topper != null) {
+    print('Student Name: ${topper['name']}');
+    print('Course: ${topper['course']}');
+    print('Average mark: ${highestAverage.toStringAsFixed(2)}');
+  }
 }
